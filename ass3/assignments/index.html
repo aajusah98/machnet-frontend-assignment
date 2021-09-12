@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js"></script>
+</head>
+<style>
+    table {
+        border: 1px solid black;
+    }
+    
+    table td {
+        border: 1px solid black;
+        width: 100px;
+    }
+</style>
+
+<body>
+
+    Name: <input type="text" id="input_fiel">
+
+    <Button value="gi" id="btn">clickme</Button>
+    <p id="output"></p>
+
+
+    <h1>Hightlight text on mouse hover Events (change text CSS ) </h1>
+    <br>
+    <p onmousemove="changeColor()" id="hovertext">Hover Me To see the magic</p>
+
+
+    <h2>Add new row on previously present table view</h2>
+    <br>
+    <button onclick="addrow()">Add Row</button>
+    <table id="mytbl">
+        <tr>
+            <th>Sn</th>
+            <th>Name</th>
+            <th>Class</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Ajay Sah</td>
+            <td>B.tech</td>
+        </tr>
+    </table>
+
+
+    <h3>From two input field calculate area (l*b) on button Press . (note :remove button and replace with text : “Area is : … “)</h3>
+
+    Length: <input type="text" id="length">
+    <br> Breath: <input type="text" id="breath">
+
+    <button onclick="calArea()" id="calbtn">Calculate</button>
+    <p id="display"></p>
+
+    <h4>From 3 radio button remove remaining two if one is selected</h4>
+
+    <form>
+        <div class="btn_holder">
+            <input type="radio" class="radiobtn">
+            <label for="">Radio 1</label>
+        </div>
+        <div class="btn_holder">
+            <input type="radio" class="radiobtn">
+            <label for="">Radio 2</label>
+        </div>
+        <div class="btn_holder">
+            <input type="radio" class="radiobtn">
+            <label for="">Radio 3</label>
+        </div>
+    </form>
+
+
+</body>
+
+</html>

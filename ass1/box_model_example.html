@@ -1,0 +1,93 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+<title> Box Model</title>
+<style> 
+.box {
+  width: 300px;  
+  height: 50px;  
+  padding: 20px; 
+  margin: 20px;  
+  border-width: 20px; 
+ 
+  border-style:solid;
+  border-radius:25px;
+  background-color:red;
+}
+
+.box:hover {
+  border-width:30px; 
+  border-color:#29AAE1;
+  background-color:white; 
+}
+
+
+h1 {
+  text-align:center;
+  color:yellow;
+  font-size:24px; 
+	font-style:italic;
+	font-weight:lighter;
+}
+
+body {
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0;
+	top:0;
+	display:table;
+}
+
+main {
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+}
+
+.wrapper {
+	width:auto;
+	display:inline-block;
+	border:1px dashed black;
+  cursor:pointer;
+}
+
+.content {
+  display:table;
+  width:100%;
+  height:100%;
+  border:1px dashed black;
+}
+
+h1 {
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
+}
+
+* {
+  -webkit-transition:0.5s;
+  transition:0.5s; 
+}
+
+
+
+
+</style> 
+</head>  
+<body>
+<main>
+<center><h2>Box Model Example Hover on box to see the animation </h2></center>  
+<div class="wrapper">
+    <div class="box">
+      <div class="content"> 
+        <h1>Content Goes Here</h1>
+      </div>
+    </div>
+  </div>
+</main>
+   
+</body>   
+</html>
+
+ 

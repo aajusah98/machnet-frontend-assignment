@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400&display=swap");
+:root {
+    --border: 2px solid red;
+    --border-radius: 10%;
+    --padding: 15px;
+    --background-color: gray;
+}
+
+.container {
+    padding: var(--padding);
+    background-color: var(--background-color);
+}
+
+.header_wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: blanchedalmond;
+}
+
+.logo_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.nav_links_wrap ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav_links_wrap ul>li {
+    margin: 20px;
+}
+
+.hamburger_icon_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.freepik_promo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.freepik_promo>p {
+    font-size: 20px;
+    font-family: "Oswald", sans-serif;
+}
+
+.freepik_promo>span {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Oswald", sans-serif;
+    margin: 20px;
+}
+
+.footer_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 300px;
+    background-color: #333333;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.footer_wrap .footer_title {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.footer_wrap .footer_links {
+    display: flex;
+    justify-content: center;
+}
+
+.footer_wrap .footer_title>p {
+    font-size: 20px;
+    color: white;
+}
+
+.footer_wrap .footer_links>a {
+    color: #daa477;
+    margin-right: 15px;
+}
+
+.footer_wrap .footer_links>span {
+    color: white;
+    margin-right: 10px;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 300px) {
+    .logo_wrap img {
+        height: 57px;
+        width: 91px;
+        margin-left: 20px;
+    }
+    .nav_links_wrap ul {
+        display: none;
+    }
+    .nav_links_wrap .hamburger_icon_wrap img {
+        height: 50px;
+        width: 50px;
+        margin-right: 20px;
+    }
+    .header_wrap h1 {
+        font-size: 20px;
+    }
+    .main_content {
+        display: flex;
+        flex-direction: column;
+    }
+    .main_content .main_heading {
+        display: flex;
+        justify-content: center;
+    }
+    .main_content .main_heading h1 {
+        font-size: 25px;
+        color: red;
+        margin-top: 30px;
+        font-family: "Oswald", sans-serif;
+    }
+    .main_content .main_description {
+        display: flex;
+        justify-content: center;
+        margin: 15px;
+    }
+    .main_content .main_description p {
+        text-align: justify;
+        font-family: "Oswald", sans-serif;
+        font-size: 15px;
+    }
+    .card_wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        background-color: white;
+        margin: 10px;
+    }
+    .card .card_header {
+        background: url(pizza_img.jpg);
+        margin: 15px;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        height: 250px;
+    }
+    .card .card_header img {
+        height: 200px;
+        width: 350px;
+        background-color: yellowgreen;
+    }
+    .card .card_body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        flex-direction: column;
+        margin: 15px;
+    }
+    .card .card_body .card_body_child_wrap {
+        display: flex;
+        flex-wrap: wrap;
+        width: auto;
+        margin: 8px;
+    }
+    .card .card_body .card-heading h1 {
+        font-size: 30px;
+        margin-bottom: -16px;
+    }
+    .card .card_body .card-description p {
+        font-size: 20px;
+        text-align: justify;
+        font-family: "Oswald", sans-serif;
+    }
+    .card .card_body .card-price span {
+        font-size: 20px;
+        text-align: justify;
+        color: red;
+        font-weight: bold;
+        font-family: "Oswald", sans-serif;
+    }
+    .card .card_body .card-btn button {
+        min-width: 150px;
+        min-height: 50px;
+        background-color: rgb(214 214 214);
+        border: 1px solid greenyellow;
+    }
+}
+
+@media (min-width: 576px) {
+    .card {
+        display: flex;
+        flex-direction: row;
+        height: 300px;
+        width: auto;
+        background-color: white;
+        margin: 10px;
+    }
+    .card .card_header {
+        height: 253px;
+        width: 250px;
+    }
+    .card .card_body .card-description p {
+        font-size: 16px;
+        text-align: justify;
+        margin-bottom: initial;
+    }
+    .card .card_body .card-heading h1 {
+        font-size: 34px;
+        margin-bottom: -10px;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+
+@media (min-width: 768px) {}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .card {
+        flex: 1;
+    }
+    .box_row_wrap {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -10px;
+    }
+    .main_content .main_heading h1 {
+        font-size: 63px;
+        color: red;
+        margin-top: 30px;
+        font-family: "Oswald", sans-serif;
+        margin-bottom: -29px;
+    }
+    .main_content .main_description p {
+        font-size: 28px;
+        font-family: "Oswald", sans-serif;
+    }
+.nav_links_wrap>ul {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+    }
+    .nav_links_wrap .hamburger_icon_wrap {
+        display: none;
+    }
+    .nav_links_wrap ul>li {
+        margin: 20px;
+    }
+    .nav_links_wrap ul>li>a {
+        color: black;
+        text-decoration: none;
+    }
+
+}

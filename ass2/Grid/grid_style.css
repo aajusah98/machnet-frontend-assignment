@@ -1,0 +1,108 @@
+:root {
+    --border: 2px solid red;
+    --border-radius: 10%;
+}
+
+.wrapper--border {
+    border: var(--border);
+    border-radius: var(--border-radius);
+}
+
+
+/* conetnt wrapper class */
+
+.container {
+    padding: 15px;
+}
+
+.header_wrap {
+    display: grid;
+    justify-content: center;
+    grid-area: header;
+    background-color: #ff9400;
+}
+
+.navbar_wrap {
+    display: grid;
+    justify-content: center;
+    grid-area: navbar;
+    background-color: #94e421;
+}
+
+.sidebar_warp {
+    display: grid;
+    justify-content: center;
+    grid-area: sidebar;
+    background-color: #b098ff;
+}
+
+.main_container_wrap {
+    display: grid;
+    justify-content: center;
+    grid-area: main;
+    background-color: #ff7572;
+}
+
+.ads_sidebar_wrap {
+    display: grid;
+    justify-content: center;
+    grid-area: ads;
+    background-color: yellow;
+}
+
+.footer_wrap {
+    display: grid;
+    justify-content: center;
+    grid-area: footer;
+    background-color: #f15aff;
+}
+
+
+/* Begin::mobile view css */
+
+@media (min-width:320px) {
+    .container {
+        display: grid;
+        grid-template-columns: 100%;
+        row-gap: 10px;
+        grid-template-rows: 1fr 1fr 4fr 1fr 1fr 1fr;
+        grid-template-areas: "header" "navbar" "main" "sidebar" "ads" "footer";
+    }
+}
+
+
+/* End::mobile view css */
+
+
+/* Begin::Tablet view css */
+
+@media (min-width:720px) {
+    .container {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        row-gap: 10px;
+        column-gap: 10px;
+        grid-template-rows: 1fr 1fr 4fr 1fr;
+        grid-template-areas: "header header" "navbar navbar" "sidebar main" "ads footer";
+    }
+}
+
+
+/* End::Tablet view css */
+
+
+/* Begin::Desktop view css */
+
+@media (min-width:1200px) {
+    .container {
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+        row-gap: 10px;
+        column-gap: 10px;
+        grid-template-rows: 1fr 1fr 4fr 1fr;
+        grid-template-areas: "header header header" "sidebar navbar ads" "sidebar main ads" "footer footer footer";
+    }
+}
+
+
+/* End::Desktop view css */
