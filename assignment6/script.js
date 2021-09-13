@@ -7,11 +7,20 @@ const closeBtn = document.getElementById('close-btn');
 const playButton = document.getElementById('lets-play');
 const rules = document.getElementById('rules');
 const canvas = document.getElementById('canvas');
+const level = document.querySelector('.level');
+const startScreen = document.querySelector('.startScreen');
 const ctx = canvas.getContext('2d');
 
 let score = 0;
 
 let pauseBall = false;
+
+const levelSpeed = { easy: 7, moderate: 10, difficult: 14 };
+
+
+level.addEventListener('click', (e) => {
+    ball.speed = levelSpeed[e.target.id];
+});
 
 const brickRowCount = 9;
 const brickColumnCount = 5;
@@ -163,12 +172,19 @@ function moveBall() {
         showAllBricks();
         score = 0;
         lossSound.play();
+        location.reload();
     }
 }
 
 // Increase score
 function increaseScore() {
     score++;
+
+    if (score > hiscoreval) {
+        hiscoreval = score;
+        localStorage.setItem("hiscore", JSON.stringify(hiscoreval));
+        hiscoreBox.innerHTML = "HiScore: " + hiscoreval;
+    }
 
     if (score % (brickRowCount * brickColumnCount) === 0) {
 
@@ -223,14 +239,14 @@ function update() {
     requestAnimationFrame(update);
 }
 
-function palyGame() {
-    canvas.style.display = "block";
-    document.getElementById('lets-play').style.display = "none";
-    pauseBall = true;
-    update();
-}
+// function palyGame() {
+//     canvas.style.display = "block";
+//     document.getElementById('lets-play').style.display = "none";
+//     pauseBall = true;
+//     update();
+// }
 
-playButton.addEventListener('click', palyGame);
+// playButton.addEventListener('click', palyGame);
 
 //pause game
 document.addEventListener('keyup', event => {
@@ -238,6 +254,21 @@ document.addEventListener('keyup', event => {
         pauseBall = !pauseBall;
     }
 })
+startScreen.addEventListener('click', () => {
+    canvas.style.display = "block";
+    // document.getElementById('lets-play').style.display = "none";
+    startScreen.style.display = "none";
+    let hiscore = localStorage.getItem("hiscore");
+    if (hiscore === null) {
+        hiscoreval = 0;
+        localStorage.setItem("hiscore", JSON.stringify(hiscoreval))
+    } else {
+        hiscoreval = JSON.parse(hiscore);
+        hiscoreBox.innerHTML = "HiScore: " + hiscore;
+    }
+    pauseBall = true;
+    update();
+});
 
 // Keydown event
 function keyDown(e) {

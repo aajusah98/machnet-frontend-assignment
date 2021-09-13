@@ -12,6 +12,7 @@
 
 <body>
     <h1>Breakout!</h1>
+    <div id="hiscoreBox"></div>
     <button id="rules-btn" class="btn rules-btn">Show Rules</button>
     <div id="rules" class="rules">
         <h2>How To Play:</h2>
@@ -22,8 +23,18 @@
         <button id="close-btn" class="btn">Close</button>
     </div>
     <canvas id="canvas" width="800" height="400"></canvas>
-    <div class="start-game-screen">
+    <!-- <div class="start-game-screen">
         <button class="btn play_btn" id="lets-play">Lets Play <i class="fas fa-play"></i></button>
+    </div> -->
+
+    <div class="startScreen">
+        <div>Select Level
+            <span class="level">
+                <button class="btn play_btn" id="easy">Easy <i class="fas fa-play"></i></button>
+                <button class="btn play_btn" id="moderate">Moderate <i class="fas fa-play"></i></button>
+                <button class="btn play_btn" id="difficult">Difficult <i class="fas fa-play"></i></button>
+            </span>
+        </div>
     </div>
 
 

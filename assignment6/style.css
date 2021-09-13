@@ -81,3 +81,11 @@ canvas {
     justify-content: center;
     justify-items: center;
 }
+
+#game-over {
+    display: block;
+    font-size: 30px;
+    color: rgb(46, 44, 40);
+    font-weight: 500px;
+    margin-bottom: -40px;
+}
