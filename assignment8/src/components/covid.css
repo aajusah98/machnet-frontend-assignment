@@ -1,0 +1,63 @@
+
+.total_covid_report__wrap{
+    display: flex;
+  
+}
+
+.total_covid_report__wrap>ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.total_covid_report__wrap>ul>li{
+    margin: 20px;
+}
+
+.card{
+    display: flex;
+    width: 200px;
+    height: 150px;
+    background-color: red;
+}
+
+.card__name{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+
+.card__name > span{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10px;
+    margin: 10px;
+}
+
+.card__total{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.covid_report_statewaise_wrap{
+    margin: 20px;
+}
+
+.search_box{
+    width: 200px;
+    height: 30px;
+    margin: 20px;
+}
+.heading_wrap{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: 20px;
+}
