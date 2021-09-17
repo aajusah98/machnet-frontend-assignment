@@ -1,0 +1,255 @@
+.background_warp{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(
+        118.39deg, #4CA9DF -1.16%, #292E91 101.16%);
+        background-size: cover;
+        background-repeat: repeat;
+        height: 2000px;
+}
+
+.profile_generate_wrap{
+    display: grid;
+    min-height: 600px;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile_name{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse; 
+}
+.profile_name > h2{
+position: absolute;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 42px;
+color: #ffffff;
+}
+
+.profile_name > p{
+position: absolute;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+color: #ffffff;
+margin-left: 22px;
+}
+
+.profile_username_input_wrap >p{
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 21px;
+color: #FEFEFE;
+}
+
+
+.profile_generate_wrap .user_name{
+    position: absolute;
+    background: rgba(237, 237, 237, 0.63);
+    border-radius: 6px;
+    width: 180px;
+    width: 1;
+    height: 26px;
+    
+}
+
+.profile_generate_wrap .generate_profile_btn{
+    position: absolute;
+    background: #DE5A21;
+    border: 1px solid #F24E1E;
+    box-sizing: border-box;
+    border-radius: 6px;
+    width: 130px;
+    height: 30px;
+    margin-left: 208px;
+}
+
+.profile_details_wrap{
+    position: absolute;
+    width: 1100px;
+    height: 744px;
+    left: 102px;
+    top: 1000px;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
+.profile_image_container{
+display: flex;
+justify-content: center;
+}
+
+.profile_image_container >img{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    top: -54px;
+}
+
+.name_username_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.name_username_container p:nth-child(1) {
+    position: absolute;
+    height: 42px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+    top: 21px;
+}
+
+.name_username_container p:nth-child(2) {
+    position: absolute;
+    width: 119px;
+    height: 28px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    top: 70px;
+    color: #343333;
+}
+
+.follower_following_repo_conatiner{
+    display: flex;
+    gap: 36px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 156px;
+}
+
+.follwer_conatiner{
+    width: 150px;
+}
+
+.follwer_conatiner >p{
+position: absolute;
+width: 41px;
+height: 42px;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 42px;
+color: #2D2C2C;
+top: 92px;
+margin-left: 48px;
+}
+
+.follwer_conatiner >button{
+position: absolute;
+width: 142px;
+height: 36px;
+background: rgba(196, 196, 196, 0.35);
+border-radius: 3px;
+margin: 10px;
+}
+
+.follower_following_repo_conatiner{
+    
+    display: flex;
+    gap: 20px;
+    height: 250px;
+    margin: 40px;
+}
+
+.info_wraper{
+    display: flex;
+    gap: 20px;
+    height: 250px;
+    margin-top: -67px;
+}
+
+.personal_info_wrap{
+    position: absolute;
+    width: 400px;
+    height: 255px;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 4px;
+    left: 95px;
+}
+
+.bio_info_wrap{
+    position: absolute;
+    width: 400px;
+    height: 257px;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 4px;
+    right: 90px;
+
+}
+
+.info_container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 30px 0px 30px;
+  
+}
+
+.user_info_wrap p:nth-child(1){
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+color: #7E7E7E;
+margin-bottom: -23px;
+}
+
+.user_info_wrap p:nth-child(2){
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+color: #000000;
+margin-top: 35px;
+}
+
+.bio_info_wrap p:nth-child(1){
+padding: 16px;
+position: absolute;
+width: 27px;
+height: 21px;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 21px;
+color: #2D2C2C;
+}
+
+.bio_info_wrap p:nth-child(2){
+    position: absolute;
+    /* width: 410px; */
+    /* height: 112px; */
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2D2C2C;
+    padding: 10px;
+    margin-top: 65px;
+    text-align: justify;
+}
