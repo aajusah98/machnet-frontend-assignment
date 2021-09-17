@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { getUserProfile } from '../apis/getUserProfile';
+import { useHistory } from "react-router-dom";
 import "../css/Home.css";
-const Home = () => {
+export const Home = () => {
+    const history = useHistory();
     const [inputValue, setinputValue] = useState('');
     const [inputSubmit, setinputSubmit] = useState('');
     const [loading, setLoading] = useState(false);
@@ -14,6 +16,7 @@ const Home = () => {
 
     const inputSubmitValue = () => {
         setinputSubmit(inputValue);
+        history.push(`/Profile/${users}`);
     }
 
 
@@ -107,7 +110,7 @@ const Home = () => {
                             </div>
                             <div className="user_info_wrap">
                                 <p><span></span>Joined Date</p>
-                                <p>{users.created_at}</p>
+                                <p>{new Date(users.created_at).toUTCString().toString()}</p>
                             </div>
                         </div>
 

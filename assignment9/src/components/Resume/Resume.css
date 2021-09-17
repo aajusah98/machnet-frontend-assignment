@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+:root {
+    --text-font-family: 'Inter', sans-serif;
+}
+
+.loading {
+    color: white;
+    font-size: 2rem;
+    margin-top: 30vh;
+    font-weight: bold;
+    text-align: center;
+    animation: animate 4s infinite;
+    font-family: var(--text-font-family);
+}
+
+.error {
+    color: white;
+    font-size: 2rem;
+    margin-top: 30vh;
+    font-weight: bold;
+    text-align: center;
+}
+
+@keyframes animate {
+    0% {
+        font-size: 2rem;
+    }
+    25% {
+        font-size: 3rem;
+    }
+    50% {
+        font-size: 2rem;
+    }
+    75% {
+        font-size: 3rem;
+    }
+    100% {
+        font-size: 2rem;
+    }
+}

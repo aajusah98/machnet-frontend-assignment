@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+.wrapper {
+    margin: 30vh 25vw 0vh 25vw;
+}
+
+:root {
+    --text-color: white;
+    --text-font-family: 'Inter', sans-serif;
+}
+
+.title {
+    font-size: 2.8rem;
+    text-align: center;
+    color: var(--text-color);
+    font-family: var(--text-font-family);
+}
+
+.sub-title {
+    margin-top: -2vh;
+    text-align: center;
+    color: var(--text-color);
+    font-family: var(--text-font-family);
+}
+
+label:after {
+    content: '\A';
+    white-space: pre;
+}
+
+.form {
+    margin: 4vh 0vw 0vh 10vw;
+}
+
+.form .form__label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--text-color);
+    font-family: var(--text-font-family);
+}
+
+.form .form__username {
+    width: 18vw;
+    border: none;
+    padding: 1rem;
+    margin-top: 1vh;
+    border-radius: 0.5rem;
+    background-color: #ABC0DB;
+}
+
+.form .form__btn {
+    border: none;
+    width: 10vw;
+    padding: 0.8rem;
+    font-size: 1rem;
+    margin-left: 1vw;
+    text-align: center;
+    border-radius: 0.5rem;
+    transition: 0.5s linear;
+    color: var(--text-color);
+    background-color: #DE5A21;
+    font-family: var(--text-font-family);
+}
+
+.form .form__btn:hover {
+    width: 11vw;
+    display: inline;
+    cursor: pointer;
+}
+
+.form .form__btn::after {
+    content: "->";
+    opacity: 0;
+}
+
+.form .form__btn:hover::after {
+    opacity: 1;
+    transition: 1s linear;
+}
